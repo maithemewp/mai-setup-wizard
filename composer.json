@@ -1,0 +1,12 @@
+{
+  "name": "maithemewp/mai-setup-wizard",
+  "authors": [
+    {
+      "name": "Lee Anthony",
+      "email": "seothemeswp@gmail.com"
+    }
+  ],
+  "require": {
+    "pimple/pimple": "^3.3"
+  }
+}
