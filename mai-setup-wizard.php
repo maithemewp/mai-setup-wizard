@@ -29,8 +29,6 @@ function init() {
 		return;
 	}
 
-	require_once __DIR__ . '/vendor/autoload.php';
-
 	\spl_autoload_register( function ( $class ) {
 		if ( \strpos( $class, __NAMESPACE__ ) !== false ) {
 			require_once __DIR__ . '/src' . \str_replace( '\\', DIRECTORY_SEPARATOR, \substr( $class, \strlen( __NAMESPACE__ ) ) ) . '.php';
