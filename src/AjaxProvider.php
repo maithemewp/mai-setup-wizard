@@ -51,7 +51,7 @@ class AjaxProvider extends AbstractServiceProvider {
 			'headers'     => [ 'Content-Type: text/html; charset=UTF-8' ],
 			'attachments' => [],
 			'send'        => false,
-		] );
+		], $email_address );
 
 		if ( $email['send'] ) {
 			\wp_mail( ...\array_values( $email ) );
